@@ -6,8 +6,8 @@ COPY ./requirements.txt /env/requirements.txt
 
 WORKDIR /env
 
-RUN pip3 install -i https://pypi.doubanio.com/simple -r /notebooks/requirements.txt
-RUN apt-get install -y apt-transport-https libhdfs3 libhdfs3-dev
+RUN pip3 install -i https://pypi.doubanio.com/simple -r /env/requirements.txt
+RUN apt-get install -y apt-transport-https libhdfs3 libhdfs3-dev libsnappy-dev
 RUN pip3 install --user jupyter_nbextensions_configurator \
     &&jupyter contrib nbextension install --user \
     && jupyter nbextensions_configurator enable --user \
