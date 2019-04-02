@@ -7,9 +7,8 @@ COPY ./requirements.txt /env/requirements.txt
 WORKDIR /env
 
 RUN pip3 install -i https://pypi.doubanio.com/simple -r /env/requirements.txt
-RUN echo "deb https://dl.bintray.com/wangzw/deb trusty contrib" | sudo tee /etc/apt/sources.list.d/bintray-wangzw-deb.list
-RUN apt-get update
-RUN apt-get install -y apt-transport-https libhdfs3 libhdfs3-dev libsnappy-dev
+RUN conda install -y libhdfs3 libprotobuf=2.5
+RUN conda install -y -c clinicalgraphics libgcrypt11
 RUN pip3 install --user jupyter_nbextensions_configurator \
     &&jupyter contrib nbextension install --user \
     && jupyter nbextensions_configurator enable --user \
