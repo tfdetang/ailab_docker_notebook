@@ -5,6 +5,10 @@ jieba
 pymongo
 tqdm
 imagehash
+click
+gensim
+sklearn
+opencv_python
 lap
 keras
 hdfs

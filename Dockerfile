@@ -1,4 +1,4 @@
-FROM gcr.io/kubeflow-images-public/tensorflow-1.12.0-notebook-cpu:v0.4.0
+FROM anjia0532/kubeflow-images-public.tensorflow-1.5.1-notebook-cpu
 
 MAINTAINER Weikunt <weikun.t@google.com>
 
