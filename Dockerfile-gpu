@@ -1,4 +1,4 @@
-FROM anjia0532/kubeflow-images-public.tensorflow-1.5.1-notebook-gpu
+FROM anjia0532/kubeflow-images-public.tensorflow-1.5.1-notebook-gpu:v0.3.1
 
 MAINTAINER Weikunt <weikun.t@google.com>
 
@@ -6,7 +6,7 @@ COPY ./requirements.txt /env/requirements.txt
 
 WORKDIR /env
 
-RUN pip3 install -i https://pypi.doubanio.com/simple -r /env/requirements.txt
+RUN pip3 install -r /env/requirements.txt
 RUN conda install -y libhdfs3 libprotobuf=2.5
 RUN conda install -y -c clinicalgraphics libgcrypt11
 RUN pip3 install --user jupyter_nbextensions_configurator \
