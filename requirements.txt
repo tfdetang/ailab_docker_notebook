@@ -14,7 +14,6 @@ keras
 hdfs
 pyarrow
 fastparquet
-tensorflow-serving-api
 pep8
 matplotlib
 hdfs3

@@ -7,7 +7,7 @@ COPY ./requirements.txt /env/requirements.txt
 WORKDIR /env
 
 RUN pip3 install -r /env/requirements.txt
-RUN conda install -y libhdfs3 libprotobuf=2.5
+RUN conda install -y libhdfs3 libprotobuf
 RUN conda install -y -c clinicalgraphics libgcrypt11
 RUN pip3 install --user jupyter_nbextensions_configurator \
     &&jupyter contrib nbextension install --user \
