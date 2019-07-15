@@ -10,7 +10,7 @@ gensim
 sklearn
 opencv_python
 lap
-keras
+keras==2.1.6
 hdfs
 pyarrow
 fastparquet
