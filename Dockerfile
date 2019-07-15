@@ -1,4 +1,4 @@
-FROM gcr.io/kubeflow-images-public/tensorflow-1.12.0-notebook-cpu:v0.4.0
+FROM gcr.io/kubeflow-images-public/tensorflow-1.8.0-notebook-cpu:v0.4.0
 
 MAINTAINER Weikunt <weikun.t@google.com>
 
@@ -8,7 +8,6 @@ WORKDIR /env
 
 RUN pip3 install -r /env/requirements.txt
 RUN conda install -y libhdfs3 libprotobuf
-RUN conda install -y -c clinicalgraphics libgcrypt11
 RUN pip3 install --user jupyter_nbextensions_configurator \
     &&jupyter contrib nbextension install --user \
     && jupyter nbextensions_configurator enable --user \
