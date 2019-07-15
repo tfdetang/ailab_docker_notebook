@@ -1,4 +1,4 @@
-FROM tensorflow-1.8.0-notebook-gpu
+FROM gcr.io/kubeflow-images-public/tensorflow-1.8.0-notebook-gpu:v0.4.0
 
 MAINTAINER Weikunt <weikun.t@google.com>
 
