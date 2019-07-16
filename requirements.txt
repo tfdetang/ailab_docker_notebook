@@ -19,3 +19,9 @@ matplotlib
 hdfs3
 Cython
 Shapely
+fontTools
+tenacity
+easyDict
+pyyaml
+Cython
+pillow
