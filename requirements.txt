@@ -25,6 +25,6 @@ easyDict
 pyyaml
 Cython
 pillow
-pycocotools
+pycocotools-fix
 imgaug
 scikit-image
